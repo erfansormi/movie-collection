@@ -1,0 +1,21 @@
+.movie_searched_container {
+    position: absolute;
+    top: 44px;
+    width: 400px;
+    height: 300px;
+    border-radius: 8px;
+    background-color: #222;
+    overflow-y: auto;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 15px 20px; */
+}
+
+.spinner_box {
+    color: var(--yellow-700) !important;
+}

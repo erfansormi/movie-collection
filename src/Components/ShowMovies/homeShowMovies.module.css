@@ -1,0 +1,70 @@
+.container {
+    position: relative;
+    height: 380px;
+}
+
+
+.banner_container::after, .banner_container::before {
+    content: "";
+    background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.4));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.4));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    display: block;
+    height: 100%;
+    z-index: -10;
+}
+
+.bg_container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -10;
+    background-image: url("https://images.plex.tv/photo?size=large-1280&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FqoqbfyJritu6LOhkwgB0DTGBuZI.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg_container::after,
+.bg_container::before {
+    content: "";
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    display: block;
+    height: 50%;
+    z-index: -10;
+}
+
+.left_side_bg {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85));
+    position: absolute;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    z-index: -100;
+}
+
+.banner_title {
+    position: absolute;
+    color: #fff;
+    z-index: 10;
+    top: 45%;
+    z-index: -9;
+    text-transform: capitalize;
+}
+
+.banner_title h1 {
+    font-weight: 700;
+}
